@@ -1,80 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://www.svgrepo.com/show/276097/eco.svg"
+    />
     <title>Como e onde descartar seu lixo eletrônico - Eco - São Luis</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <h1>Eco - São Luis</h1>
+      <h1>Eco - São Luis</h1>
     </header>
 
-    <nav class="nav">
+    <!-- <nav class="nav">
         <div class="container">
             <a href="/">Home</a>
             <a href="/sobre">Sobre</a>
             <a href="/contato">Contato</a>
         </div>
-    </nav>
+    </nav> -->
 
     <main class="container">
-        <article class="main-content">
-            <h1>Como e onde descartar seu lixo eletrônico</h1>
-            
-            <section class="content-section">
-                <h2>O que é lixo eletrônico?</h2>
-                <p>Lixo eletrônico, ou e-lixo, são todos os dispositivos eletroeletrônicos descartados que contêm componentes potencialmente prejudiciais ao meio ambiente.</p>
-                <ul class="e-waste-list">
-                    <li>Celulares e tablets</li>
-                    <li>Computadores e notebooks</li>
-                    <li>Pilhas e baterias</li>
-                    <li>Eletrodomésticos</li>
-                    <li>Equipamentos de informática</li>
-                </ul>
-            </section>
+      <section class="init">
+        <h2>Descubra pontos de descarte perto de você!</h2>
+        <img src="images/eco-1.png" alt="Eco - São Luis" />
+      </section>
+      <article class="main-content">
+        <h1>Como e onde descartar seu lixo eletrônico</h1>
 
-            <section class="content-section">
-                <h2>Como descartar corretamente</h2>
-                <div class="disposal-methods">
-                    <div class="method-card">
-                        <h3>1. Coleta Municipal</h3>
-                        <p>Verifique o calendário de coleta seletiva de sua cidade para eletrônicos.</p>
-                    </div>
-                    <div class="method-card">
-                        <h3>2. Pontos de Coleta</h3>
-                        <p>Locais especializados em receber e triar componentes eletrônicos.</p>
-                    </div>
-                    <div class="method-card">
-                        <h3>3. Fabricantes e Lojas</h3>
-                        <p>Programas de logística reversa de grandes empresas do setor.</p>
-                    </div>
-                </div>
-            </section>
+        <section class="content-section">
+          <h2>O que é lixo eletrônico?</h2>
+          <p>
+            Lixo eletrônico, ou e-lixo, são todos os dispositivos
+            eletroeletrônicos descartados que contêm componentes potencialmente
+            prejudiciais ao meio ambiente.
+          </p>
+          <ul class="e-waste-list">
+            <li>Celulares e tablets</li>
+            <li>Computadores e notebooks</li>
+            <li>Pilhas e baterias</li>
+            <li>Eletrodomésticos</li>
+            <li>Equipamentos de informática</li>
+          </ul>
+        </section>
 
-            <section class="content-section">
-                <h2>Onde descartar</h2>
-                <div class="geo-control">
-                    <button class="geo-button" onclick="getUserLocation()">
-                        📍 Atualizar minha localização
-                    </button>
-                    <div class="location-status" id="locationStatus"></div>
-                </div>
-                <div id="map"></div>
-            </section>
-        </article>
+        <section class="content-section">
+          <h2>Como descartar corretamente</h2>
+          <div class="disposal-methods">
+            <div class="method-card">
+              <h3>1. Coleta Municipal</h3>
+              <p>
+                Verifique o calendário de coleta seletiva de sua cidade para
+                eletrônicos.
+              </p>
+            </div>
+            <div class="method-card">
+              <h3>2. Pontos de Coleta</h3>
+              <p>
+                Locais especializados em receber e triar componentes
+                eletrônicos.
+              </p>
+            </div>
+            <div class="method-card">
+              <h3>3. Fabricantes e Lojas</h3>
+              <p>
+                Programas de logística reversa de grandes empresas do setor.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2>Onde descartar</h2>
+          <div class="geo-control">
+            <button class="geo-button" onclick="getUserLocation()">
+              📍 Atualizar minha localização
+            </button>
+            <div class="location-status" id="locationStatus"></div>
+          </div>
+          <div id="map"></div>
+        </section>
+      </article>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>© 2026 Eco - São Luis</p>
-            <p style="margin-top: 15px;"><a href="#top" style="color: #fff; text-decoration: underline;">Voltar ao topo</a></p>
-        </div>
+      <div class="container">
+        <p>© 2025 Eco - São Luis</p>
+        <p style="margin-top: 15px">
+          <a href="#top" style="color: #fff; text-decoration: underline"
+            >Voltar ao topo</a
+          >
+        </p>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

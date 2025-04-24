@@ -9,6 +9,26 @@ const pontosColeta = [
     latitude: -2.5584420772606387,
     longitude: -44.30906121626945,
   },
+  {
+    nome: "EcoPonto Parque do Rangedor",
+    latitude: -2.533198,
+    longitude: -44.2979,
+  },
+  {
+    nome: "EcoPonto Parque do Bom Menino",
+    latitude: -2.4985929061347005,
+    longitude: -44.261526982756315,
+  },
+  {
+    nome: "Loja Vivo",
+    latitude: -2.50644537211267,
+    longitude: -44.29588996070613,
+  },
+  {
+    nome: "Magazine Luiza",
+    latitude: -2.504284183970194,
+    longitude: -44.26809860166469,
+  },
 ];
 
 const map = L.map("map").setView([-2.529, -44.2979], 13);
